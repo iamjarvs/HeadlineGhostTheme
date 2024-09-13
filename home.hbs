@@ -2,8 +2,6 @@
 
 <main class="gh-main gh-outer">
     <div class="gh-inner">
-
-
         {{#if @custom.enter_tag_slugs_for_primary_sections}}
             {{#get "tags" filter="slug:[{{@custom.enter_tag_slugs_for_primary_sections}}]"}}
                 {{#foreach tags}}
@@ -59,11 +57,11 @@
                 {{/foreach}}
             </div>
 
-<!--             <footer class="gh-topic-footer">
+            <footer class="gh-topic-footer">
                 {{#match pagination.pages ">" 1}}
                     <a class="gh-topic-link" href="{{@site.url}}/page/2">Show more {{> "icons/arrow"}}</a>
                 {{/match}}
-            </footer> -->
+            </footer>
         </section>
     </div>
 </main>
